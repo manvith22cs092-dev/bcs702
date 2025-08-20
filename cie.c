@@ -9,15 +9,13 @@ int main() {
     printf("Enter a positive number: ");
     scanf("%lld", &n);
 
-    // Start measuring time
+
     start = clock();
 
-    // Perform a simple computation (sum of first n numbers)
     for (i = 1; i <= n; i++) {
         sum += i;
     }
 
-    // End measuring time
     end = clock();
 
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
@@ -27,3 +25,4 @@ int main() {
 
     return 0;
 }
+
